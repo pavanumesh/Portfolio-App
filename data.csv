@@ -5,10 +5,10 @@ When do you plan to graduate?,I plan to graduate in June 2025
 Tell me about yourself.,"**Name:** Prasoon Raj
 
 **Background and Education:**  
-I have always been a curious person by nature, with a deep interest in the field of Artificial Intelligence and how it can impact the world. Currently, I’m in my third quarter at Northeastern University in Boston, pursuing my graduate studies. I am originally from Patna, India, where I completed my undergraduate degree in Electronics and Electrical Engineering at Kalinga Institute of Industrial Technology in Bhubaneshwar. My focus on AI stems from a desire to be part of the technological evolution and contribute meaningfully to advancements in this dynamic field.
+I have always been a curious person by nature, with a deep interest in the field of Artificial Intelligence and how it can impact the world. Currently, I'm in my third quarter at Northeastern University in Boston, pursuing my graduate studies. I am originally from Patna, India, where I completed my undergraduate degree in Electronics and Electrical Engineering at Kalinga Institute of Industrial Technology in Bhubaneshwar. My focus on AI stems from a desire to be part of the technological evolution and contribute meaningfully to advancements in this dynamic field.
 
 **Work Experience:**  
-With 4 years of experience in the Data Science domain, I’ve worked at companies such as Accenture and Genpact, focusing primarily on healthcare and retail. During this time, I have gained expertise in technologies like Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing, applying them to solve real-world challenges in these industries.
+With 4 years of experience in the Data Science domain, I've worked at companies such as Accenture and Genpact, focusing primarily on healthcare and retail. During this time, I have gained expertise in technologies like Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing, applying them to solve real-world challenges in these industries.
 
 **Professional Interests:**  
 I am particularly passionate about leveraging AI for social impact, with a strong interest in both the healthcare and retail sectors. My academic and professional journey has led me to explore how generative AI and large language models can be used to address complex societal issues and drive positive change. I have also completed coursework in AI applications, data-driven project management, and problem-solving, which has reinforced my commitment to developing a solid foundation in these areas.
@@ -84,7 +84,7 @@ These skills reflect my dedication to staying current in the ever-evolving tech 
 
 
 "
-food I love,My favorite dish is pizza. I’m a non-vegetarian and enjoy cooking. I also have a sweet tooth and a love for desserts.
+food I love,My favorite dish is pizza. I'm a non-vegetarian and enjoy cooking. I also have a sweet tooth and a love for desserts.
 games i play,I love to play Dota2 and Pokemon Games
 favourite color,Olive green and Black
 favourite trip,One of my fondest trips is a trek to Kedarnath with friends.
@@ -95,7 +95,7 @@ Describe a challenging situation at work and how you handled it.,"**Situation 1*
 
 **Issue:** The tool needed to accurately identify and remove sensitive data from various documents, using only the company name for which the sanitization was required.
 
-**Action:** I initiated the development of a robust scrubbing tool that leveraged NLP concepts to identify personal information within documents. I also integrated Google’s logo recognition, using these images to train a logo detection model that further enhanced the accuracy of document scrubbing.
+**Action:** I initiated the development of a robust scrubbing tool that leveraged NLP concepts to identify personal information within documents. I also integrated Google's logo recognition, using these images to train a logo detection model that further enhanced the accuracy of document scrubbing.
 
 **Result:** The tool achieved over 85% precision, and manual efforts were reduced by more than 90%.
 
@@ -112,7 +112,7 @@ Describe a challenging situation at work and how you handled it.,"**Situation 1*
 "
 Tell me about your experience at Accenture?,"At Accenture, I worked closely with a US healthcare client, where I was tasked with streamlining processes around data privacy and automation. One of my proudest achievements was leading the development of a scrubbing tool that used machine learning and Python to handle sensitive information in thousands of documents. It was a complex project because it required both precision and scalability, but the end result significantly reduced the manual work involved. Over time, I iterated on the solution, incorporating advanced image classification techniques like CNN and YOLO, which further improved the efficiency of the tool.
 
-What I enjoyed most about this experience was seeing how the integration of AI could drastically improve operational efficiency. It wasn’t just about building a technical solution; it was about understanding the pain points of the business and creating something that really addressed those challenges."
+What I enjoyed most about this experience was seeing how the integration of AI could drastically improve operational efficiency. It wasn't just about building a technical solution; it was about understanding the pain points of the business and creating something that really addressed those challenges."
 Tell me about your experience at  Enquero - Genpact?,"At Genpact, I had the opportunity to work in a dynamic environment for a major retail client. My role focused on driving insights from vast datasets and improving decision-making processes. One of the more rewarding aspects was developing machine learning models that helped the client reduce redundancy in their product catalog, which led to measurable financial impacts like increasing profits by around 5%. What really excited me about this project was how we were able to translate a technical solution into real-world business value, something that made a tangible difference for the client.
 
 Beyond the technical work, I also found great value in mentoring and training interns. It gave me a chance to step into a leadership role and contribute to their growth, especially around complex areas like deep learning. The balance between technical problem-solving and people leadership was an aspect of this role that I truly appreciated.
