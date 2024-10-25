@@ -107,7 +107,7 @@ def main():
                    <a href='https://www.linkedin.com/in/prasoon-raj-902/' target='_blank' style='margin-right: 10px;'>
                        <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' width='30'/>
                    </a>
-                   <a href='https://github.com/prasoon902' target='_blank'>
+                   <a href='https://github.com/Pra-soon' target='_blank'>
                        <img src='https://cdn-icons-png.flaticon.com/512/733/733553.png' width='30'/>
                    </a>
                </div>
