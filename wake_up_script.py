@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 def wake_up_app(url):
     try:
+        print(url)
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
         wake_up_button = soup.find('button', string=lambda text: 'Yes, get this app back up!' in text if text else False)
