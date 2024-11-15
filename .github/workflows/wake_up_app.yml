@@ -2,7 +2,7 @@ name: Wake Up Streamlit App
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Runs every 6 hours
+    - cron: '0 */10 * * *'  # Runs every 10 hours
 
 jobs:
   wake_up:
