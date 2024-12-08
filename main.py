@@ -98,20 +98,21 @@ def main():
 
     st.markdown("""
     <style>
-    /* Add gradient background to the main page */
+    /* Dark theme background */
     .stApp {
-        background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+        background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
     }
     
-    /* Add a card-like effect to the main content */
+    /* Card-like effect with dark theme */
     .stMarkdown, .stTextArea, div[data-testid="stImage"] {
-        background-color: white;
+        background-color: #2d2d2d;
         padding: 1.5rem;
         border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #3d3d3d;
     }
     
-    /* Existing social icons styles */
+    /* Social icons styling */
     .social-icons {
         text-align: right;
         padding: 10px 0;
@@ -126,41 +127,59 @@ def main():
     .social-icons a img {
         width: 30px;
         transition: all 0.3s ease;
+        filter: brightness(0.9);
     }
     .social-icons a img:hover {
         transform: translateY(-3px) scale(1.1);
-        filter: brightness(90%);
+        filter: brightness(1);
     }
     
-    /* Enhanced text styling */
+    /* Text styling for dark theme */
     h1, h3 {
-        color: #2c3e50;
+        color: #ffffff !important;
         font-weight: 600;
     }
+    p {
+        color: #e0e0e0 !important;
+    }
     
-    /* Style the download button */
+    /* Download button styling */
     .stDownloadButton button {
-        background-color: #2c3e50 !important;
-        color: white;
+        background-color: #4a4a4a !important;
+        color: white !important;
         border-radius: 5px;
-        border: none;
+        border: 1px solid #5a5a5a !important;
         padding: 0.5rem 1rem;
         transition: all 0.3s ease;
     }
     .stDownloadButton button:hover {
-        background-color: #34495e !important;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        background-color: #5a5a5a !important;
+        border-color: #6a6a6a !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     
-    /* Style the text area */
+    /* Text area styling */
     .stTextArea textarea {
-        border: 1px solid #e0e0e0;
+        background-color: #2d2d2d !important;
+        color: #ffffff !important;
+        border: 1px solid #3d3d3d !important;
         border-radius: 10px;
         padding: 10px;
     }
     .stTextArea textarea:focus {
-        border-color: #2c3e50;
-        box-shadow: 0 0 0 2px rgba(44,62,80,0.1);
+        border-color: #4d4d4d !important;
+        box-shadow: 0 0 0 2px rgba(77, 77, 77, 0.2);
+    }
+    
+    /* Response container styling */
+    .response-container {
+        background-color: #2d2d2d;
+        color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border: 1px solid #3d3d3d;
+        margin-top: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     </style>
     """, unsafe_allow_html=True)
@@ -199,16 +218,8 @@ def main():
         with st.spinner("Thinking... Please wait"):
             result = generate_response(message)
             
-        # Style the response display to match the overall theme
         st.markdown(f"""
-            <div style='
-                background-color: white;
-                padding: 1.5rem;
-                border-radius: 10px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-                margin-top: 1rem;
-                border-left: 4px solid #2c3e50;
-            '>
+            <div class='response-container'>
                 {result}
             </div>
         """, unsafe_allow_html=True)
