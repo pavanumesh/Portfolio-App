@@ -95,17 +95,29 @@ def main():
     st.set_page_config(
         page_title="Get to know me", page_icon=":male-technologist:")
 
-
+    # Combine all styles into one block and update the social icons CSS
     st.markdown("""
     <style>
     .social-icons {
         text-align: right;
-        padding-right: 10px 0;
-        }
-    .social-icons img:hover{
-        transform: scale(1.1);
-        transition: transform 0.2s ease;
-        }
+        padding: 10px 0;
+    }
+    .social-icons a {
+        display: inline-block;  
+        margin-right: 10px;
+    }
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+    .social-icons a img {
+        width: 30px;
+        transition: all 0.3s ease;
+    }
+    .social-icons a img:hover {
+        transform: translateY(-3px) scale(1.1);
+        filter: brightness(90%);
+    }
+    /* ... rest of your existing styles ... */
     </style>
     """, unsafe_allow_html=True)
 
