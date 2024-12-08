@@ -95,15 +95,29 @@ def main():
     st.set_page_config(
         page_title="Get to know me", page_icon=":male-technologist:")
 
-    # Combine all styles into one block and update the social icons CSS
+
     st.markdown("""
     <style>
+    /* Add gradient background to the main page */
+    .stApp {
+        background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    }
+    
+    /* Add a card-like effect to the main content */
+    .stMarkdown, .stTextArea, div[data-testid="stImage"] {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    /* Existing social icons styles */
     .social-icons {
         text-align: right;
         padding: 10px 0;
     }
     .social-icons a {
-        display: inline-block;  
+        display: inline-block;
         margin-right: 10px;
     }
     .social-icons a:last-child {
@@ -117,7 +131,37 @@ def main():
         transform: translateY(-3px) scale(1.1);
         filter: brightness(90%);
     }
-    /* ... rest of your existing styles ... */
+    
+    /* Enhanced text styling */
+    h1, h3 {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+    
+    /* Style the download button */
+    .stDownloadButton button {
+        background-color: #2c3e50 !important;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+    }
+    .stDownloadButton button:hover {
+        background-color: #34495e !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Style the text area */
+    .stTextArea textarea {
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .stTextArea textarea:focus {
+        border-color: #2c3e50;
+        box-shadow: 0 0 0 2px rgba(44,62,80,0.1);
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -152,11 +196,22 @@ def main():
     message = st.text_area("Your question:", height=100, label_visibility="collapsed")
 
     if message:
-        st.write("Thinking...")
-
-        result = generate_response(message)
-
-        st.info(result)
+        with st.spinner("Thinking... Please wait"):
+            result = generate_response(message)
+            
+        # Style the response display to match the overall theme
+        st.markdown(f"""
+            <div style='
+                background-color: white;
+                padding: 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                margin-top: 1rem;
+                border-left: 4px solid #2c3e50;
+            '>
+                {result}
+            </div>
+        """, unsafe_allow_html=True)
 
 
 if __name__ == '__main__':
