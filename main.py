@@ -98,21 +98,17 @@ def main():
 
     st.markdown("""
     <style>
-    /* Dark theme background */
+    /* Clean dark theme background */
     .stApp {
-        background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
+        background: #1a1a1a;
     }
     
-    /* Card-like effect with dark theme */
-    .stMarkdown, .stTextArea, div[data-testid="stImage"] {
-        background-color: #2d2d2d;
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border: 1px solid #3d3d3d;
+    /* Minimal styling for content */
+    .stMarkdown {
+        color: #ffffff;
     }
     
-    /* Social icons styling */
+    /* Social icons styling - keeping the hover effects */
     .social-icons {
         text-align: right;
         padding: 10px 0;
@@ -134,7 +130,7 @@ def main():
         filter: brightness(1);
     }
     
-    /* Text styling for dark theme */
+    /* Clean text styling */
     h1, h3 {
         color: #ffffff !important;
         font-weight: 600;
@@ -143,43 +139,39 @@ def main():
         color: #e0e0e0 !important;
     }
     
-    /* Download button styling */
+    /* Subtle button styling */
     .stDownloadButton button {
-        background-color: #4a4a4a !important;
+        background-color: #333333 !important;
         color: white !important;
         border-radius: 5px;
-        border: 1px solid #5a5a5a !important;
+        border: none !important;
         padding: 0.5rem 1rem;
         transition: all 0.3s ease;
     }
     .stDownloadButton button:hover {
-        background-color: #5a5a5a !important;
-        border-color: #6a6a6a !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #444444 !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
     
-    /* Text area styling */
+    /* Clean text area styling */
     .stTextArea textarea {
         background-color: #2d2d2d !important;
         color: #ffffff !important;
-        border: 1px solid #3d3d3d !important;
-        border-radius: 10px;
+        border: none !important;
+        border-radius: 5px;
         padding: 10px;
     }
     .stTextArea textarea:focus {
-        border-color: #4d4d4d !important;
         box-shadow: 0 0 0 2px rgba(77, 77, 77, 0.2);
     }
     
-    /* Response container styling */
+    /* Minimal response container */
     .response-container {
         background-color: #2d2d2d;
         color: #ffffff;
         padding: 1.5rem;
-        border-radius: 10px;
-        border: 1px solid #3d3d3d;
+        border-radius: 5px;
         margin-top: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     </style>
     """, unsafe_allow_html=True)
