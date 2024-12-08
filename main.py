@@ -95,6 +95,20 @@ def main():
     st.set_page_config(
         page_title="Get to know me", page_icon=":male-technologist:")
 
+
+    st.markdown("""
+    <style>
+    .social-icons {
+        text-align: right;
+        padding-right: 10px 0;
+        }
+    .social-icons img:hover{
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
     # Move resume download and social icons to the top
     col4, col5 = st.columns([3, 1])
     with col4:
@@ -103,7 +117,7 @@ def main():
                                mime="application/pdf")
     with col5:
         st.markdown("""
-               <div style='text-align: right;'>
+               <div class='social-icons'>
                    <a href='https://www.linkedin.com/in/prasoon-raj-902/' target='_blank' style='margin-right: 10px;'>
                        <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' width='30'/>
                    </a>
