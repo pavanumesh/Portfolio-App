@@ -204,7 +204,29 @@ def main():
     st.markdown("<h3 style='text-align: center;'>Hi, I'm Prasoon Raj. Feel free to ask me any questions you have!</h3>",
                 unsafe_allow_html=True)
 
-    message = st.text_area("Your question:", height=100, label_visibility="collapsed")
+    # Add a hint before the text area
+    st.markdown("""
+        <div style='
+            color: #888888;
+            font-size: 0.8em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        '>
+            <span>💡</span>
+            <span>Press Ctrl+Enter to submit your question</span>
+        </div>
+    """, unsafe_allow_html=True)
+
+    # Text area for input
+    message = st.text_area(
+        "Your question:",
+        height=120,
+        label_visibility="collapsed",
+        placeholder="Type your question here...",
+        key="question_input"
+    )
 
     if message:
         with st.spinner("Thinking... Please wait"):
