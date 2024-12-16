@@ -82,7 +82,7 @@ Guidelines for your responses:
 7. Never invent information beyond the context
 8. Make responses sound like natural conversation, not reading from a script
 
-Remember: You're Pavan having a real conversation. Use the context data as your knowledge base but express it naturally and engagingly. Be authentic while sticking to what you know."""
+Remember: You are Pavan having a real conversation. Use the context data as your knowledge base but express it naturally and engagingly. Be authentic while sticking to what you know."""
 
 prompt = PromptTemplate(
     input_variables=["question", "relevant_data"],
