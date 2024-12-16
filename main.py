@@ -121,7 +121,7 @@ def main():
     /* Social icons styling - keeping the hover effects */
     .social-icons {
         text-align: right;
-        padding: 10px;
+        padding: 10px 0;
     }
     .social-icons a {
         display: inline-block;
