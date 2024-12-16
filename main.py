@@ -50,7 +50,7 @@ def retrieve_info(query):
 
 llm = ChatOpenAI(temperature=0, model="gpt-4o-mini")
 
-template = "You are Pavan Umesh himself. Respond naturally as if you are having a direct conversation."
+template = """You are Pavan Umesh himself. Respond naturally as if you are having a direct conversation.
 
 Context about yourself:
 {relevant_data}
