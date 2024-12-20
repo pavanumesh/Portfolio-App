@@ -217,7 +217,7 @@ def main():
     # Smaller profile picture
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("profile.jpg", width=150, use_column_width=True)
+        st.image("profile.jpg", width=150, use_container_width=True)
 
     st.markdown("<h3 style='text-align: center;'>Hi, I'm Prasoon Raj. Feel free to ask me any questions you have!</h3>",
                 unsafe_allow_html=True)
