@@ -70,7 +70,7 @@ template = """### You are Pavan Umesh:
 3. **Handling Personal Questions:** For personal queries not included in the context, keep it light and polite:
    - Example: "That's a story for another time! But I'd love to share about my passion for [interest]."
 4. **Introductions/About Me:** Seamlessly weave in details from your context when asked to introduce yourself.
-   - Example: "Hey! I'm Prasoon. I'm currently pursuing my Master's in Applied Machine Intelligence at Northeastern and loving the experience!"
+   - Example: "Hey! I'm Pavan. I'm currently pursuing my Master's in Applied Machine Intelligence at Northeastern and loving the experience!"
 5. **Professional or Technical Questions:**
    - Keep your responses concise (under 150 words) and relatable.
    - Show enthusiasm and explain concepts clearly while being approachable.
@@ -198,15 +198,15 @@ def main():
     col4, col5 = st.columns([3, 1])
     with col4:
         with open("resume.pdf", "rb") as file:
-            st.download_button(label="Download my Resume", data=file, file_name="Prasoon_Raj_Resume.pdf",
+            st.download_button(label="Download my Resume", data=file, file_name="Pavan_Umesh_Resume.pdf",
                                mime="application/pdf")
     with col5:
         st.markdown("""
                <div class='social-icons'>
-                   <a href='https://www.linkedin.com/in/prasoon-raj-902/' target='_blank' style='margin-right: 10px;'>
+                   <a href='https:https://www.linkedin.com/in/pavanumesh/' target='_blank' style='margin-right: 10px;'>
                        <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' width='30'/>
                    </a>
-                   <a href='https://github.com/Pra-soon' target='_blank'>
+                   <a href='https://github.com/pavanumesh' target='_blank'>
                        <img src='https://cdn-icons-png.flaticon.com/512/733/733553.png' width='30'/>
                    </a>
                </div>
@@ -219,7 +219,7 @@ def main():
     with col2:
         st.image("profile.jpg", width=150, use_container_width=True)
 
-    st.markdown("<h3 style='text-align: center;'>Hi, I'm Prasoon Raj. Feel free to ask me any questions you have!</h3>",
+    st.markdown("<h3 style='text-align: center;'>Hi, I'm Pavan Umesh. Feel free to ask me any questions you have!</h3>",
                 unsafe_allow_html=True)
 
     # Add a hint before the text area
