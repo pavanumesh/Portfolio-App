@@ -205,7 +205,7 @@ def main():
             <div style="text-align: left;">
                 <a href="https://drive.google.com/drive/folders/1sqgvWaDLkmnteebrKl96ozMv0hUdkpu-?usp=sharing" target="_blank" 
                    style="display: inline-block; padding: 8px 20px; background-color: #333; color: white; 
-                      font-size: 16px; font-weight: normal; text-decoration: none; border-radius: 5px; 
+                      font-size: 15px; font-weight: normal; text-decoration: none; border-radius: 5px; 
                       transition: all 0.3s ease;">
                  Reports & Publications
              </a>
