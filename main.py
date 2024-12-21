@@ -207,7 +207,7 @@ def main():
                    style="display: inline-block; padding: 8px 20px; background-color: #333; color: white; 
                       font-size: 14px; font-weight: normal; text-decoration: none; border-radius: 5px; 
                       transition: all 0.3s ease;">
-                 View my reports & publications
+                 Reports & Publications
              </a>
          </div>
      """, unsafe_allow_html=True)
