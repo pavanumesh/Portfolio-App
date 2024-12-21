@@ -200,7 +200,7 @@ def main():
         with open("resume.pdf", "rb") as file:
             st.download_button(label="Download my Resume", data=file, file_name="Pavan_Umesh_Resume.pdf",
                                mime="application/pdf")
-            st.markdown("""
+    st.markdown("""
     <div style="text-align: center; margin-top: 10px;">
         <a href="https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_LINK" target="_blank" 
            style="display: inline-block; padding: 8px 20px; background-color: #333; color: white; 
