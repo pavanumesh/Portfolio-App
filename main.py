@@ -212,6 +212,16 @@ def main():
                </div>
            """, unsafe_allow_html=True)
 
+    st.markdown("""
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/drive/folders/1sqgvWaDLkmnteebrKl96ozMv0hUdkpu-?usp=sharing" target="_blank">
+                <img src="https://img.icons8.com/doodle/64/000000/notebook.png" 
+                     alt="Notebook Icon" style="width: 100px; height: 100px;"/>
+            </a>
+            <p style="color: #ffffff; font-size: 16px;">View My Reports & Publications</p>
+        </div>
+    """, unsafe_allow_html=True)
+    
     st.markdown("<h1 style='text-align: center;'>Get to know me</h1>", unsafe_allow_html=True)
 
     # Smaller profile picture
