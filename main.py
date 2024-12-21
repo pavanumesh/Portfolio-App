@@ -200,6 +200,17 @@ def main():
         with open("resume.pdf", "rb") as file:
             st.download_button(label="Download my Resume", data=file, file_name="Pavan_Umesh_Resume.pdf",
                                mime="application/pdf")
+            st.markdown("""
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://drive.google.com/drive/folders/1sqgvWaDLkmnteebrKl96ozMv0hUdkpu-?usp=sharing" target="_blank" 
+           style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; 
+                  font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; 
+                  transition: all 0.3s ease;">
+            View My Reports & Publications
+        </a>
+    </div>
+""", unsafe_allow_html=True)
+            
     with col5:
         st.markdown("""
                <div class='social-icons'>
@@ -212,16 +223,6 @@ def main():
                </div>
            """, unsafe_allow_html=True)
 
-    st.markdown("""
-        <div style="text-align: center; margin-top: 20px;">
-            <a href="https://drive.google.com/drive/folders/1sqgvWaDLkmnteebrKl96ozMv0hUdkpu-?usp=sharing" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_Docs_logo_%282020%29.svg" 
-                 alt="Google Docs Logo" style="width: 100px; height: 100px;"/>
-            </a>
-            <p style="color: #ffffff; font-size: 16px;">View My Reports & Publications</p>
-        </div>
-    """, unsafe_allow_html=True)
-    
     st.markdown("<h1 style='text-align: center;'>Get to know me</h1>", unsafe_allow_html=True)
 
     # Smaller profile picture
