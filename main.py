@@ -203,7 +203,7 @@ def main():
     with col5:
         st.markdown("""
                <div class='social-icons'>
-                   <a href='https:https://www.linkedin.com/in/pavanumesh/' target='_blank' style='margin-right: 10px;'>
+                   <a href='https://www.linkedin.com/in/pavanumesh/' target='_blank' style='margin-right: 10px;'>
                        <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' width='30'/>
                    </a>
                    <a href='https://github.com/pavanumesh' target='_blank'>
