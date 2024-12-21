@@ -210,6 +210,15 @@ def main():
                  Reports & Publications
              </a>
          </div>
+         <style>
+            a:hover {
+            background-color: #444444;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            }
+        </style>
      """, unsafe_allow_html=True)
             
     with col5:
