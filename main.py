@@ -215,8 +215,8 @@ def main():
     st.markdown("""
         <div style="text-align: center; margin-top: 20px;">
             <a href="https://drive.google.com/drive/folders/1sqgvWaDLkmnteebrKl96ozMv0hUdkpu-?usp=sharing" target="_blank">
-                <img src="pngegg.png" 
-                     alt="Notebook Icon" style="width: 100px; height: 100px;"/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_Docs_logo_%282020%29.svg" 
+                 alt="Google Docs Logo" style="width: 100px; height: 100px;"/>
             </a>
             <p style="color: #ffffff; font-size: 16px;">View My Reports & Publications</p>
         </div>
